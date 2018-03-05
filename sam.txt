@@ -20,12 +20,11 @@ min(timeSeriesLength)
 
 length(detailArray[which(detailArray[,6]==1),6])
 
-#remove from loop
+#create an array of dummy variables for the 4 seasons of the quarterly data
 Q1s = seq (1,400,4)
 Q2s = seq (2,400,4)
 Q3s = seq (3,400,4)
 
-#create an array of dummy variables for the 4 seasons of the quarterly data
 dummys = array(0, c(400,4))
 dummys[,1] = 1:400
 for (i in 1:400){
